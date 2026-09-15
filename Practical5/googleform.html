@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+</head>
+<body>
+
+    <form id = registractionform>
+
+        <h1>Student Registration Form</h1>
+
+        <div>
+            <label>Student Name :</label><br>
+            <input type="text" size="20" placeholder="First Name" id="firstname">
+            <input type="text" size="20" placeholder="Middle Name" id="middlename">
+            <input type="text" size="20" placeholder="Last Name" id="lastname">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Date Of Birth :</label><br>
+            <input type="text" size="2" placeholder="Date" id="date">
+            <input type="text" size="2" placeholder="Month" id="month">
+            <input type="text" size="4" placeholder="Year" id="year">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="mobile">Mobile no. :</label><br>
+            +91
+            <input type="text" size="15" placeholder="Enter your number" id="mobile">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Email id :</label><br>
+            <input type="text" size="50" placeholder="Enter your email" id="email">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Password :</label><br>
+            <input type="password" size="20" placeholder="Enter your password" id="password">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Confirm Password :</label><br>
+            <input type="password" size="20" placeholder="Enter your password again" id="confirmPassword">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Gender :</label><br>
+            <input type="radio" name="g"> Male
+            <input type="radio" name="g"> Female
+        </div>
+
+        <br>
+
+        <div>
+            <label>Department :</label><br>
+            <select>
+                <option value="">Select Department</option>
+                <option value="CSE">CSE</option>
+                <option value="CE">CE</option>
+                <option value="IT">IT</option>
+                <option value="AIML">AIML</option>
+                <option value="EC">EC</option>
+                <option value="EE">EE</option>
+                <option value="CL">CL</option>
+                <option value="ML">ML</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Course :</label><br>
+            <input type="checkbox" value="Python"> Python<br>
+            <input type="checkbox" value="Java"> Java<br>
+            <input type="checkbox" value="DSA"> DSA<br>
+            <input type="checkbox" value="WDF"> WDF<br>
+            <input type="checkbox" value="FCN"> FCN<br>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Student Photo :</label><br>
+            <input type="file" id="photo">
+            <br>Size: 50kb-500kb, Format: jpg, png, jpeg
+        </div>
+
+        <br>
+
+        <div>
+            <label>City :</label><br>
+            <input type="text" size="20" id="city">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Address :</label><br>
+            <textarea cols="50" rows="5" id="address"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit" value="Submit" id="submit">
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+
+</body>
+</html>
