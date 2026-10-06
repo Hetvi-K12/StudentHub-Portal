@@ -1,0 +1,50 @@
+[
+    {
+        "subject": "Web Development",
+        "assignment": "HTML Website",
+        "dueDate": "18 August 2026",
+        "status": "Submitted"
+    },
+    {
+        "subject": "Data Structures and Algorithm",
+        "assignment": "Binary Search",
+        "dueDate": "20 August 2026",
+        "status": "Submitted"
+    },
+    {
+        "subject": "Object Oriented Programming",
+        "assignment": "Inheritance",
+        "dueDate": "15 August 2026",
+        "status": "Done Late"
+    },
+    {
+        "subject": "Computer Networking",
+        "assignment": "Topologies",
+        "dueDate": "22 August 2026",
+        "status": "Pending"
+    },
+    {
+        "subject": "Discrete Mathematics",
+        "assignment": "Unit 1",
+        "dueDate": "12 August 2026",
+        "status": "Submitted"
+    },
+    {
+        "subject": "Web Development",
+        "assignment": "CSS Styling",
+        "dueDate": "25 September 2026",
+        "status": "Pending"
+    },
+    {
+        "subject": "Data Structures and Algorithm",
+        "assignment": "Sorting Algorithms",
+        "dueDate": "10 September 2026",
+        "status": "Submitted"
+    },
+    {
+        "subject": "Object Oriented Programming",
+        "assignment": "Inheritance",
+        "dueDate": "20 September 2026",
+        "status": "Pending"
+    }
+]
