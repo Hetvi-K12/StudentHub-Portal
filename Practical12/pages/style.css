@@ -1,0 +1,158 @@
+/* Practical 12 — Event Management styles */
+
+.p12-msg {
+    max-width: 900px;
+    margin: 16px auto;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.p12-ok  { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.p12-err { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+.p12-empty {
+    text-align: center;
+    margin-top: 40px;
+    color: #555;
+}
+
+.p12-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.p12-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.09);
+    overflow: hidden;
+    width: 300px;
+    border-top: 4px solid #C89B3C;
+    display: flex;
+    flex-direction: column;
+}
+
+.p12-poster {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.p12-no-poster {
+    width: 100%;
+    height: 180px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.p12-card-body {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.p12-card-body h2 {
+    font-size: 16px;
+    margin: 0 0 6px;
+    color: #16233B;
+}
+
+.p12-meta {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.p12-card-body p {
+    font-size: 14px;
+    color: #444;
+    flex: 1;
+}
+
+.p12-actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+.p12-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: .25s;
+}
+.p12-btn-submit { background: #16233B; color: #fff; }
+.p12-btn-submit:hover { background: #C89B3C; color: #16233B; }
+.p12-btn-edit   { background: #C89B3C; color: #16233B; }
+.p12-btn-edit:hover { background: #a87d28; color: #fff; }
+.p12-btn-delete { background: #c0392b; color: #fff; }
+.p12-btn-delete:hover { background: #922b21; }
+.p12-btn-cancel { background: #999; color: #fff; }
+.p12-btn-cancel:hover { background: #666; }
+
+.p12-form-wrap {
+    max-width: 600px;
+    margin: 24px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.09);
+    padding: 30px 36px;
+}
+
+.p12-form-wrap label {
+    display: block;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    color: #16233B;
+}
+
+.p12-form-wrap input[type="text"],
+.p12-form-wrap input[type="date"],
+.p12-form-wrap textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.p12-form-wrap button,
+.p12-form-wrap a.p12-btn {
+    margin-top: 20px;
+    margin-right: 8px;
+}
+
+.p12-req { color: #c00; }
+
+.p12-thumb {
+    max-width: 120px;
+    max-height: 80px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.p12-confirm-box {
+    text-align: center;
+}
+.p12-confirm-box h2 {
+    color: #16233B;
+    margin: 12px 0;
+}

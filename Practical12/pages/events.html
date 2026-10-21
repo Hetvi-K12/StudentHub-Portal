@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events - StudentHub Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="events-page">
+    <h1>Campus Events</h1>
+
+    <nav>
+        <a href="index.html">Home</a> &nbsp;
+        <a href="dashboard.php">Dashboard</a> &nbsp;
+        <a href="events.html">Events</a> &nbsp;
+        <a href="login.php">Login</a> &nbsp;
+        <a href="register.php">Register</a> &nbsp;
+        <a href="about.html">About</a> &nbsp;
+        <a href="contact.html">Contact</a>
+    </nav>
+    <br>
+
+    <div style="width: 95%; margin: 20px auto; background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,.08);">
+        <h2>Upcoming University Events</h2>
+        <p>Explore official StudentHub events below. Select an event and register using your student account.</p>
+    </div>
+
+    <!-- Dynamic Events Table (Populated via JavaScript fetch from events_api.php) -->
+    <table id="eventsTable">
+        <thead>
+            <tr>
+                <th>Event ID</th>
+                <th>Event Name</th>
+                <th>Description</th>
+                <th>Event Date</th>
+            </tr>
+        </thead>
+        <tbody id="eventsBody">
+            <tr>
+                <td colspan="4">Loading events from database...</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Event Registration Form -->
+    <form id="eventRegisterForm" action="events.php" method="POST">
+        <h3>Register for an Event</h3>
+        <br>
+
+        <label for="eventSelect">Select Campus Event:</label>
+        <select name="event_id" id="eventSelect" required style="width: 100%; padding: 12px; border: 1px solid #d8dce5; border-radius: 10px; margin-bottom: 20px; font-size: 15px; background: #fff;">
+            <option value="">-- Select Event --</option>
+        </select>
+
+        <button type="submit">Submit Event Registration</button>
+        <p id="eventMessage" style="margin-top: 15px; font-weight: bold;"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
