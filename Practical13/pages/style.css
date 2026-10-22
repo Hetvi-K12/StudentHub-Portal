@@ -1,0 +1,194 @@
+/* Practical 13 — Courses page styles matching existing project look */
+
+body {
+    background: #eaf4ec;
+}
+
+/* ---- Form section ---- */
+.p13-form-section {
+    max-width: 540px;
+    margin: 24px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.09);
+    padding: 24px 30px;
+    border-top: 4px solid #C89B3C;
+    transform: none;
+}
+.p13-form-section:hover {
+    transform: translateY(-3px);
+    border-top-color: #16233B;
+}
+.p13-form-section h2 {
+    margin: 0 0 16px;
+    color: #16233B;
+    font-size: 18px;
+}
+.p13-form-section label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 4px;
+    color: #16233B;
+    font-size: 14px;
+}
+.p13-form-section input[type="text"],
+.p13-form-section textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #d8dce5;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+.p13-form-btns {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+/* ---- Status banner ---- */
+.p13-status {
+    max-width: 540px;
+    margin: 10px auto;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+.p13-status-ok  { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.p13-status-err { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+/* ---- Course grid ---- */
+.p13-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 0 16px;
+    background: transparent;
+    box-shadow: none;
+    border-top: none;
+    transform: none;
+}
+.p13-grid:hover {
+    transform: none;
+    box-shadow: none;
+    border-top-color: transparent;
+}
+
+/* ---- Course card ---- */
+.p13-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #dde8dd;
+    box-shadow: 0 3px 10px rgba(0,0,0,.07);
+    width: 220px;
+    padding: 24px 18px 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    border-top: none;
+    transition: .3s;
+}
+.p13-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.13);
+    border-top: none;
+    border-top-color: transparent;
+}
+
+/* ---- Icon circle ---- */
+.p13-icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e0f2e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    color: #2e7d52;
+    font-size: 24px;
+    border-top: none;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+}
+.p13-icon-wrap:hover {
+    transform: none;
+    box-shadow: none;
+    border-top-color: transparent;
+}
+
+/* ---- Card text ---- */
+.p13-name {
+    font-weight: bold;
+    color: #16233B;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.p13-desc {
+    color: #2e7d52;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+/* ---- Card buttons ---- */
+.p13-card-btns {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+    background: transparent;
+    box-shadow: none;
+    border-top: none;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    transform: none;
+}
+.p13-card-btns:hover {
+    transform: none;
+    box-shadow: none;
+    border-top-color: transparent;
+}
+
+.p13-btn {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .2s;
+    box-shadow: none;
+}
+.p13-btn-save   { background: #16233B; color: #fff; }
+.p13-btn-save:hover { background: #C89B3C; color: #16233B; }
+.p13-btn-edit   { background: #2e7d52; color: #fff; }
+.p13-btn-edit:hover { background: #1b5e38; color: #fff; }
+.p13-btn-delete { background: #c0392b; color: #fff; }
+.p13-btn-delete:hover { background: #922b21; }
+.p13-btn-cancel { background: #999; color: #fff; }
+.p13-btn-cancel:hover { background: #666; }
+.p13-btn:disabled { opacity: .55; cursor: not-allowed; }
+
+.p13-empty {
+    text-align: center;
+    color: #888;
+    margin-top: 30px;
+    background: transparent;
+    box-shadow: none;
+    border-top: none;
+}
+.p13-empty:hover {
+    transform: none;
+    box-shadow: none;
+    border-top-color: transparent;
+}
