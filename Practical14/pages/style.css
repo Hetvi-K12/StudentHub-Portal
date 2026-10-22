@@ -1,0 +1,135 @@
+/* Practical 14 — Admin Dashboard styles */
+
+body { background: #eaf4ec; }
+
+.p14-welcome {
+    text-align: center;
+    margin: 10px auto 20px;
+    font-size: 15px;
+    background: transparent;
+    box-shadow: none;
+    border-top: none;
+    padding: 0;
+}
+.p14-welcome:hover { transform: none; box-shadow: none; }
+
+/* Message bar */
+.p14-msg {
+    max-width: 700px;
+    margin: 14px auto;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    border-top: none;
+}
+.p14-msg:hover { transform: none; box-shadow: none; }
+.p14-msg-ok  { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.p14-msg-err { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+/* Stats row */
+.p14-stats {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin: 24px auto;
+    max-width: 900px;
+    background: transparent;
+    box-shadow: none;
+    border-top: none;
+    padding: 0;
+}
+.p14-stats:hover { transform: none; box-shadow: none; }
+
+.p14-stat-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    border-top: 4px solid #C89B3C;
+    padding: 24px 36px;
+    text-align: center;
+    min-width: 140px;
+    transition: .3s;
+}
+.p14-stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,.14);
+    border-top-color: #16233B;
+}
+.p14-stat-icon { font-size: 28px; margin-bottom: 6px; }
+.p14-stat-num  { font-size: 38px; font-weight: bold; color: #16233B; }
+.p14-stat-lbl  { font-size: 13px; color: #666; margin-top: 4px; }
+
+/* Sections */
+.p14-section {
+    max-width: 900px;
+    margin: 22px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    border-top: 4px solid #2e7d52;
+    padding: 22px 26px 16px;
+    transition: .3s;
+}
+.p14-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+    border-top-color: #16233B;
+}
+.p14-section h2 {
+    color: #16233B;
+    font-size: 18px;
+    margin: 0 0 14px;
+}
+.p14-section h2 small {
+    font-size: 13px;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Inline forms in table */
+.p14-select {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-right: 6px;
+}
+.p14-btn {
+    padding: 5px 14px;
+    border-radius: 14px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.p14-btn-update { background: #16233B; color: #fff; }
+.p14-btn-update:hover { background: #C89B3C; color: #16233B; }
+
+/* Badges */
+.p14-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.p14-badge-admin   { background: #16233B; color: #fff; }
+.p14-badge-student { background: #e0f2e9; color: #2e7d52; }
+
+.p14-self { color: #888; font-size: 13px; }
+
+.p14-empty {
+    color: #888;
+    text-align: center;
+    margin: 10px 0;
+    background: transparent;
+    box-shadow: none;
+    border-top: none;
+    padding: 0;
+}
+.p14-empty:hover { transform: none; box-shadow: none; }
+
+table { margin: 0; width: 100%; }
